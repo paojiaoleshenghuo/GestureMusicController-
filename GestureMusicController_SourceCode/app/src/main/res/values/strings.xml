@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">手势音乐控制 (GestureMusic)</string>
+    <string name="camera_permission_required">需要相机权限以捕获前置手势动作</string>
+    <string name="root_status_granted">ROOT 权限: 已获取 (可直接控制全局播放)</string>
+    <string name="root_status_denied">ROOT 权限: 未授权 (请在 Magisk/KernelSU 中授权)</string>
+    <string name="gesture_tip">手势说明:\n👉 从左往右: 下一曲\n👈 从右往左: 上一曲\n✊ 由掌握拳: 暂停 / 播放</string>
+    <string name="start_service">开启后台悬浮识别模式</string>
+    <string name="stop_service">停止后台服务</string>
+    <string name="sensitivity_title">手势灵敏度</string>
+</resources>

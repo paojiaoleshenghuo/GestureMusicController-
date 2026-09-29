@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/floatingRootView"
+    android:layout_width="120dp"
+    android:layout_height="160dp"
+    android:background="@drawable/bg_floating_window">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/floatingPreviewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scaleType="fillCenter" />
+
+    <com.example.gesturemusic.ui.GestureOverlayView
+        android:id="@+id/floatingOverlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tvFloatingStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#99000000"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="手势监控中"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <!-- Close button -->
+    <ImageButton
+        android:id="@+id/btnCloseFloating"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="top|end"
+        android:background="#88000000"
+        android:contentDescription="关闭悬浮窗"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:tint="@color/white" />
+
+</FrameLayout>
